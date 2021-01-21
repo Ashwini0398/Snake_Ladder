@@ -6,7 +6,7 @@ public class snakelader
 	{
 
 		int player1=0;
-
+		int count=0;
 		while(player1 != 100)
 		{
 			int check_option = (int) Math.floor(Math.random()*10)%3; 
@@ -15,6 +15,7 @@ public class snakelader
 			int dies = (int) Math.floor(Math.random()*6+1);
  			System.out.println("the value of dies is:" +dies);
 
+			count++;
 			switch(check_option)
 			{
 					case 1:
@@ -40,6 +41,7 @@ public class snakelader
 			}
 		}
 			System.out.println("!!!!!!!!!!you win!!!!!!!!!!!!");
+			System.out.println("total dies count is :"+count);
 	}
 }
 
