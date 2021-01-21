@@ -32,5 +32,6 @@ public class snakelader
 						System.out.println("no player");
 			}
 		}
+		System.out.println("!!!!!!!!!!you win!!!!!!!!!!!!");
 	}
 }
