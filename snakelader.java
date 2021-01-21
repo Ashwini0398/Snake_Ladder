@@ -6,8 +6,8 @@ public class snakelader
 	{
 
 		int player1=0;
-		
-		while(player1 !=100)
+
+		while(player1 != 100)
 		{
 			int check_option = (int) Math.floor(Math.random()*10)%3; 
 			System.out.println("the check option is :" +check_option);
@@ -25,7 +25,14 @@ public class snakelader
 
 					case 2:
                 				System.out.println("SNAKE");
-                                         	player1=player1-dies;
+						if(player1<=0)
+						{
+							player1=0;  //player1 starts from 0
+						}
+						else if(player1>0)
+						{
+                                         		player1=player1-dies;
+						}
                                         	System.out.println("player position is :"+player1);
                                        		 break;
 					default:
@@ -35,3 +42,4 @@ public class snakelader
 		System.out.println("!!!!!!!!!!you win!!!!!!!!!!!!");
 	}
 }
+
