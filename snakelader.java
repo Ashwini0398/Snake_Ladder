@@ -4,17 +4,19 @@ public class snakelader
 
 	public static void main(String[] args)
 	{
+
 		int player1=0;
-
-
-		int check_option = (int) Math.floor(Math.random()*10)%3; 
-		System.out.println("the check option is :" +check_option);
-
-		int dies = (int) Math.floor(Math.random()*6+1);
- 		System.out.println("the value of dies is:" +dies);
-
-		switch(check_option)
+		
+		while(player1 !=100)
 		{
+			int check_option = (int) Math.floor(Math.random()*10)%3; 
+			System.out.println("the check option is :" +check_option);
+
+			int dies = (int) Math.floor(Math.random()*6+1);
+ 			System.out.println("the value of dies is:" +dies);
+
+			switch(check_option)
+			{
 					case 1:
 					 	System.out.println("LADDER");
 					 	player1=player1+dies;
@@ -28,6 +30,7 @@ public class snakelader
                                        		 break;
 					default:
 						System.out.println("no player");
+			}
 		}
 	}
 }
