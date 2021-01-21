@@ -25,8 +25,15 @@ public class snakelader
 
 					case 2:
                 				System.out.println("SNAKE");
-                                         	player1=player1-dies;
-                                        	System.out.println("player position is :"+player1);
+						if(player1<=0)
+						{
+							player1=0;
+						}
+						else if(player1>0)
+						{
+                                         		player1=player1-dies;
+						}
+                                        		System.out.println("player position is :"+player1);
                                        		 break;
 					default:
 						System.out.println("no player");
